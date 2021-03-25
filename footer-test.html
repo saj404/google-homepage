@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Test</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .95em;
+        }
+
+        footer {
+            background-color: hsl(0, 0%, 95%);
+            display: flex;
+            flex-direction: column;
+            color: hsl(0, 1%, 45%);
+        }
+        ul {
+            display: inline;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: inline;
+            margin: 0 .7em;
+        }
+        #footer-country {
+            margin: .8em;
+        }
+        #list-cntnr {
+            display: flex;
+            justify-content: space-around;
+            margin: .8em;
+        }
+        hr {
+            width: 100%;
+            margin: 0;
+            border-top: 1px solid hsl(0, 0%, 85%);
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <span id="footer-country">Philippines</span>
+        <hr>
+        <div id="list-cntnr">
+            <ul>
+                <li>About</li>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search works</li>
+            </ul>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
