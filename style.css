@@ -48,12 +48,6 @@ nav {
 #nav-dp:hover {
     border: 3px solid rgb(233, 233, 233);
 }
-nav p {
-    margin-left: 12px;
-}
-nav p:nth-child(2) {
-    margin-right: 12px;
-}
 
 main {
     display: flex;

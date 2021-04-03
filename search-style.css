@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    min-width: fit-content;
+}
+
+/* Body Container */
+#body-cntnr {
+    display: grid;
+    min-width: 1300px;
+    grid-template-columns: 145px 500px 1fr 30px 30px;
+    align-items: center;
+    padding: 25px;
+    width: auto;
+}
+
+/* Google Logo */
+#nav-logo { 
+    width: 100px;
+}
+
+/* search bar */
+#nav-search-cntnr {
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 91%);
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 85%);
+    padding: 5px 15px;
+    width: 650px;
+    height: 2em;
+}
+#nav-search-cntnr:hover {
+    box-shadow: 1px 1px 5px hsl(0, 0%, 85%), 1px 1px 10px hsl(0, 0%, 85%);
+}
+#mic-icon {
+    padding-left: 10px;
+    width: .8em;
+    border-left: 1px solid hsl(0, 0%, 91%)
+}
+#search-icon {
+    padding-left: 20px;
+    width: .9em;
+}
+#search-box {
+    border: 0;
+    width: 90%;
+    font-size: 1.1em;
+    margin-left: 5px;
+}
+#search-box:focus {
+    outline: 0;
+}
+
+/* menu and profile pic */
+#nav-menu-cntnr {
+    border-radius: 50%;
+    border: 8px solid transparent;
+    display: flex;
+    align-items: center;
+    width: 16px;
+}
+#nav-menu-cntnr:hover {
+    background-color: rgb(233, 233, 233);
+    border: 8px solid rgb(233, 233, 233);
+}
+#nav-dp {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#nav-dp:hover {
+    border: 3px solid rgb(233, 233, 233);
+}
+
+/* list of search menu */
+#first-list, #second-list {
+    display: flex;
+    padding: 0;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 28px;
+}
+#first-list li, #second-list li {
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+    margin-right: 20px;
+    padding-bottom: 15px;
+}
+#first-list li img, #second-list li img {
+    margin-right: 5px;
+}
+#first-list {
+    grid-column: 2 / 3;
+}
+#selected-opt {
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+#second-list {
+    grid-column: 3 / 4;
+}
+
+/* hr */
+.break {
+    margin: -25px;
+    width: calc(100% + 50px);
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+    border-top: 1px solid hsl(0, 0%, 85%);
+}
+
+/* main */
+main {
+    grid-row: 4 / 5;
+    grid-column-start: 2;
+    width: 650px;
+    margin-left: 15px;
+}
+main span {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 54%);
+}
+.article-link {
+    color: hsl(0, 0%, 17%);
+}
+
+.dropdown {
+    margin-left: 5px;
+    width: 10px;
+    opacity: .5;
+}
+.page-title {
+    font-weight: normal;
+    color: rgb(0, 0, 175);
+}
+.page-title:hover {
+    text-decoration: underline;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+article * {
+    margin: 2px 0;
+}
+article span {
+    margin: 5px 0;
+}
+
+#other-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+#other-content hr {
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 93%);
+}
+#other-content-title {
+    font-size: 1.4em;
+    margin: 5px 0;
+}
+.other-content-opt {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+#last-opt {
+    margin-bottom: 15px;
+}
+#feedback {
+    position: relative;
+    width: 60px;
+    bottom: 33px;
+    left: 575px;
+    padding: 0 15px;
+    background-color: white;
+    font-size: .95em;
+    margin-bottom: 0;
+}
+
+#long-google {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+#long-google-list {
+    display: flex;
+    color: hsl(209, 74%, 53%);
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-left: 170px;
+}
+#long-google-list li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(0, 0%, 50%);
+    width: 100%;
+}
+.footer-div {
+    margin-left: 185px;
+}
+#footer-div1 {
+    padding: 25px 0 5px 0;
+}
+#footer-div2 {
+    padding: 5px 0 25px 0;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+footer li {
+    margin: 0;
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+footer li:hover {
+    color:hsl(0, 0%, 17%);
+}
+hr {
+    border-top: 1px solid hsl(0, 0%, 83%);
+}
