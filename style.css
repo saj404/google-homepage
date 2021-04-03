@@ -27,6 +27,9 @@ nav {
     justify-content: flex-end;
     margin-right: 10px;
 }
+nav p {
+    margin-right: 15px;
+}
 #nav-menu-cntnr {
     display: flex;
     align-items: center;
